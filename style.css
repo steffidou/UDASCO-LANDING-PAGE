@@ -54,13 +54,13 @@ body {
 }
 
 .activities h2 {
-    font-size: 14px; /* Increased font size */
-    margin-bottom: 5px;
+    font-size: 15px; /* Increased font size */
+    margin-bottom: 8px;
     color: #333;
 }
 
 .portfolio-card h2 {
-    font-size: 14px; /* Increased font size */
+    font-size: 16px; /* Increased font size */
 }
 
 /* Styling for the activity list */
@@ -75,7 +75,7 @@ body {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 350px;
 }
 
