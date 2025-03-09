@@ -54,13 +54,13 @@ body {
 }
 
 .activities h2 {
-    font-size: 23px; /* Increased font size */
+    font-size: 25px; /* Increased font size */
     margin-bottom: 15px;
     color: #333;
 }
 
 .portfolio-card h2 {
-    font-size: 20px; /* Increased font size */
+    font-size: 24px; /* Increased font size */
 }
 
 /* Styling for the activity list */
@@ -72,10 +72,10 @@ body {
 .activities li {
     background: #ffe0e6;
     margin: 10px 0;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 24px;
     max-width: 350px;
 }
 
@@ -83,8 +83,8 @@ body {
 button {
     background: linear-gradient(to right, #fd75ff, #ff7eb3); /* Gradient background */
     color: white;
-    font-size: 18px; /* Increased font size */
-    padding: 20px 18px; /* Increased button size */
+    font-size: 24px; /* Increased font size */
+    padding: 10px 18px; /* Increased button size */
     border: none;
     border-radius: 8px;
     cursor: pointer;
