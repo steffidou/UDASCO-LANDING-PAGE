@@ -1,81 +1,116 @@
-/* General Styling */
-body {
+* {
+    padding: 5;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #e99cff, #fbc2eb);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-/* Container */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 1200px;
-    padding: 40px;
-    background: #c78484;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    border-radius: 15px;
-    position: relative;
-}
-
-/* Activities Section */
-.activities {
+body {
+    background: linear-gradient(to right, #eb9aff, #fad0c4);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-/* Activity cards and Extra Content */
-.activity-card, .extra-content {
-    width: 300px; /* Same size */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    background: pink;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
-.activity-card h3, .extra-content h3 {
-    margin: 0;
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(207, 141, 141);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+.profile {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 500px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #ff758c;
+}
+
+.activities {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.activities h2 {
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.portfolio-card h2 {
+    font-size: 16px; /* Increased font size */
+}
+
+/* Styling for the activity list */
+.activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activities li {
+    background: #ffe0e6;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 350px;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(to right, #fd75ff, #ff7eb3); /* Gradient background */
+    color: white;
+    font-size: 16px; /* Increased font size */
+    padding: 6px 12px; /* Increased button size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff5277, #ff6581); /* Darker gradient */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
-}
-
-.activity-card p, .extra-content p {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 8px 15px;
-    background: #ff5ec6;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-
-/* Profile Styling */
-.profile {
-    text-align: center;
-}
-
-.profile-img {
-    border-radius: 50%;
-    border: 5px solid pink;
-}
-
-/* Move Extra Content to Align with HTML Activity */
-.extra-content {
-    position: absolute;
-    top: 0; /* Aligns to top */
-    right: 0;
 }
