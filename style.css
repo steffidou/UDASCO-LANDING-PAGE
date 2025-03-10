@@ -1,5 +1,7 @@
+/* General Reset */
 * {
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -15,19 +17,21 @@ body {
     padding: 20px;
 }
 
+/* Main Container */
 .container {
     width: 90%;
     max-width: 1400px;
     margin: auto;
     padding: 40px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between; /* Ensures spacing between sections */
+    align-items: flex-start;
     background: rgb(207, 141, 141);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     border-radius: 15px;
 }
 
+/* Profile Section */
 .profile {
     background: white;
     padding: 30px;
@@ -47,44 +51,41 @@ body {
     border: 5px solid #ff758c;
 }
 
+/* Activities Section (Left) */
 .activities {
     flex: 1;
     text-align: left;
     padding-left: 40px;
 }
 
-.activities h2 {
-    font-size: 18px; /* Increased font size */
-    margin-bottom: 8px;
-    color: #333;
+/* Activities Section (Right) */
+.right-activities {
+    flex: 1;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Portfolio Card Styling */
+.portfolio-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 350px;
 }
 
 .portfolio-card h2 {
-    font-size: 16px; /* Increased font size */
-}
-
-/* Styling for the activity list */
-.activities ul {
-    list-style: none;
-    padding: 0;
-}
-
-.activities li {
-    background: #ffe0e6;
-    margin: 10px 0;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    font-size: 16px;
-    max-width: 350px;
+    font-size: 18px;
+    color: #333;
 }
 
 /* Button Styling */
 button {
     background: linear-gradient(to right, #fd75ff, #ff7eb3); /* Gradient background */
     color: white;
-    font-size: 16px; /* Increased font size */
-    padding: 6px 12px; /* Increased button size */
+    font-size: 16px;
+    padding: 6px 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -96,7 +97,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to right, #ff5277, #ff6581); /* Darker gradient */
+    background: linear-gradient(to right, #ff5277, #ff6581);
     transform: scale(1.05);
 }
 
