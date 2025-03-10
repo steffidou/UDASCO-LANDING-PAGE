@@ -1,134 +1,81 @@
-* {
-    padding: 5;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* General Styling */
 body {
-    background: linear-gradient(to right, #eb9aff, #fad0c4);
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e99cff, #fbc2eb);
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Main Container */
+/* Container */
 .container {
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 40px;
     display: flex;
-    justify-content: space-between; /* Spreads elements evenly */
-    align-items: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    background: rgb(207, 141, 141);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    background: #c78484;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     border-radius: 15px;
-}
-
-/* Profile Section */
-.profile {
-    background: white;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    text-align: center;
-    flex: 1;
-    max-width: 400px;
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 5px solid #ff758c;
+    position: relative;
 }
 
 /* Activities Section */
 .activities {
-    flex: 1;
-    text-align: left;
-    padding-left: 40px;
     display: flex;
-    flex-direction: column; /* Keeps elements stacked */
+    flex-direction: column;
+    gap: 15px;
 }
 
-/* Activities Title */
-.activities h2 {
+/* Activity cards and Extra Content */
+.activity-card, .extra-content {
+    width: 300px; /* Same size */
+    padding: 20px;
+    background: pink;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.activity-card h3, .extra-content h3 {
+    margin: 0;
     font-size: 18px;
-    margin-bottom: 8px;
-    color: #333;
+    font-weight: bold;
 }
 
-/* Activity Cards */
-.portfolio-card {
-    background: #ffe0e6;
+.activity-card p, .extra-content p {
     margin: 10px 0;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    font-size: 16px;
-    max-width: 350px;
+    font-size: 14px;
 }
 
 /* Buttons */
-button {
-    background: linear-gradient(to right, #fd75ff, #ff7eb3);
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff5ec6;
     color: white;
-    font-size: 16px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    outline: none;
-    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-button:hover {
-    background: linear-gradient(to right, #ff5277, #ff6581);
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-/* Extra Content (Right Side) */
-.extra-content {
-    text-align: left;
-    padding: 20px;
-    background: #ffe6f2;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-}
-
-.extra-content h2 {
-    font-size: 20px;
-    color: #333;
-}
-
-.extra-content p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Footer */
-.footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    width: 100%;
+/* Profile Styling */
+.profile {
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid pink;
+}
+
+/* Move Extra Content to Align with HTML Activity */
+.extra-content {
+    position: absolute;
+    top: 0; /* Aligns to top */
+    right: 0;
 }
