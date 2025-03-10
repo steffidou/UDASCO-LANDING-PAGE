@@ -3,52 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity Layout</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture" width="150" class="profile-img">
+        <div class="profile large-profile">
+            <img src="formal.png" alt="Your Picture" class="profile-pic">
             <h2>Dou Issa Steffi E. Udasco</h2>
             <p>BSIT - 3R1</p>
         </div>
-
-        <!-- Activities Section -->
         <div class="activities">
-            <div class="activity-card">
-                <h3>This is my HTML activity</h3>
-                <p>Click the button below:</p>
-                <a href="#" class="btn">Just click here</a>
-            </div>
-            <div class="activity-card">
-                <h3>This is my CSS activity</h3>
-                <p>Click the button below:</p>
-                <a href="#" class="btn">Just click here</a>
-            </div>
-            <div class="activity-card">
-                <h3>This is my JSON activity</h3>
-                <p>Click the button below:</p>
-                <a href="#" class="btn">Just click here</a>
-            </div>
-            <div class="activity-card">
-                <h3>This is my Search-bar activity</h3>
-                <p>Click the button below:</p>
-                <a href="#" class="btn">Just click here</a>
-            </div>
-        </div>
+            <h2>My Activities</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <h2>This is my HTML activity</h2>
+                        <button onclick="window.open('https://steffidou.github.io/UDASCO-HTML-ACT/', '_blank')">Just click here</button>
+                    </div>
 
-        <!-- Extra Information Box (Aligned to Top Right) -->
-        <div class="extra-content">
-            <h3>Additional Information</h3>
-            <p>This is the new text placed on the right side.</p>
-            <a href="#" class="btn">Click Me</a>
+                    <div class="portfolio-card">
+                        <h2>This is my CSS activity</h2>
+                        <button onclick="window.open('https://steffidou.github.io/csscv/', '_blank')">Just click here</button>
+                    </div>
+                    <div class="portfolio-card">
+                        <h2>This is my json activity</h2>
+                        <button onclick="window.open('https://steffidou.github.io/json-act/', '_blank')">Just click here</button>
+                    </div>
+                    <div class="portfolio-card">
+                        <h2>This is my Search-bar activity</h2>
+                        <button onclick="window.open('https://steffidou.github.io/search_bar-act/', '_blank')">Just click here</button>
+                    </div>
+                </div>
         </div>
-
     </div>
-
+    <div class="footer">
+        <p> Application Development & Emerging Technologies </p>
+    </div>
 </body>
 </html>
